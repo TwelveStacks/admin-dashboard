@@ -20,25 +20,59 @@
     display: grid;
     border: 2px solid green;
     grid-template-rows: 1fr 2fr;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
+/* Top left */
 .search-bar {
-    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+/* Top right */
+.user {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.notif {
+    grid-column: 2 / 3;
+}
+
+.avatar {
+    grid-column: 3 / 4;
 }
 
 .name {
-    grid-column: 2 / 3;
+    grid-column: span 2;
 }
 
-.header-bottom {
-    grid-column: 1 / 2;
-    align-self: flex-end;
+/* Bottom left */
+.user-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
+.profile-pic {
+    grid-row: span 2;
+    align-self: center;
+    justify-self: end;
+}
+
+/* Bottom right */
 .header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.header-btn {
+    grid-row: 2 / 3;
+}
+
+.user-info h2 {
     grid-column: 2 / 3;
-    align-self: flex-end;
 }
 
 .content {
