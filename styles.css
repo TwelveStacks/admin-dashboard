@@ -214,6 +214,14 @@ article h1 {
     padding-top: 20px;
 }
 
+.project-icons {
+    display: flex;
+    gap: 10px;
+    align-self: end;
+    justify-self: end;
+    padding: 30px;
+}
+
 /* Content right side */
 aside {
     display: grid;
